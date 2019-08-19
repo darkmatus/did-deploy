@@ -1,6 +1,6 @@
 FROM docker:stable
 
-RUN apk --no-cache add git py-pip python-dev libffi-dev openssl-dev gcc libc-dev make bash
+RUN apk --no-cache add git py-pip python-dev libffi-dev openssl-dev gcc libc-dev make bash curl
 RUN pip install docker-compose
 
 # Install Helm
